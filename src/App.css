@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  font-family:'Sacramento';
+  font-size:3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2,h3,h4,h5,h6{
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
+  display: flex;
+  background-color: #EEE7F7;
+}
+
+main {
+  padding: 0;
+  width:100%;
+
+}
+
+.title {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+  background: rgb(240, 219, 25);
+  color: black;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.icon-logo{
+  font-size:30px;
+}
+.logo {
+  font-size: 18px;
+  line-height: 0;
+}
+.bars {
+  width: 30px;
+}
+.hide {
+  display: none;
+}
+
+
+.routes {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 5px;
+}
+.link {
+  display: flex;
+  color: black;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  text-decoration: none;
+}
+.link:hover {
+  border-right: 4px solid white;
+  background: rgb(235, 236, 242);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.active {
+  border-right: 4px solid white;
+  background: rgb(204, 206, 218);
+}
+.link_text {
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.menu {
+  display: flex;
   color: white;
+
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+}
+.menu_item {
+  display: flex;
+  gap: 10px;
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+}
+.menu_container .link {
+  padding-left: 20px;
+  border-bottom: #fff 0.5px solid;
 }
 
-.App-link {
-  color: #61dafb;
+.top-nav-container{
+  background: black;
+  height:4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* Dashboard */
+.dashboard-items{
+  margin: 10px;
+  padding: 5px;
+}
+
+
+/* Cards */
+.card{
+  display: flex;
+  width: 20vw;
+  height: 15vh;
+  background-color: whitesmoke;
+  margin: 10px;
+  padding: 5px;
+}
+
+
+
+.cards-container {
+  margin:10px;
+  padding:5px;
+  display: flex;
+
+}
+
+.card-content{
+  width:20vw;
+  height:30vh;
+  background-color: whitesmoke;
+ 
 }
