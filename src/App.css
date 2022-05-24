@@ -131,7 +131,7 @@ main {
   width: 20vw;
   height: 15vh;
   background-color: whitesmoke;
-  margin: 10px;
+  margin: 15px;
   padding: 5px;
 }
 
@@ -149,4 +149,14 @@ main {
   height:30vh;
   background-color: whitesmoke;
  
+}
+
+/* Tables */
+.tables{
+  display: flex;
+}
+.projects-table, .aside-projects-table{
+width:50%;
+padding: 5px;
+margin: 10px;
 }

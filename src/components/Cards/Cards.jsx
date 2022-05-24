@@ -63,7 +63,6 @@ const Card=(props)=>{
 
     </div>
 
-
     )
     
 }
