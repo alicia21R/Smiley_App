@@ -8,7 +8,7 @@ import Tables1 from '../components/Tables/Tables1';
 
 const Dashboard = () => {
   return (
-    <div className="main-dashboard"> <h2>Dashboard</h2>
+    <div className="main-dashboard"> 
      <div className="dashboard-items">
           <Cards/>
         <div className="tables">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useState, useEffect} from 'react';
 import {FaFile, FaFileArchive, FaMoneyBill, FaUsers} from 'react-icons/fa'
 
 const cards=[
@@ -33,13 +33,17 @@ const cards=[
 ]
 
 function Cards() {
-  return (
+
+   
+   
+    return (
     <section className="cards-container">   
          {cards.map((card,index)=>{
             const{name,total,icon}=card;
              return (
                <Card key={card.id} 
                  card={card}
+                 iconstyle={iconstyle}
                >
 
                </Card>
@@ -53,14 +57,13 @@ function Cards() {
 
 // destructuring items in the array
 const Card=(props)=>{
+
     const{name,total,icon} =props.card;
     return(
-        <div className="card">
-
+    <div className="card">
         <h3>{name}</h3>
         <h4>{total}</h4>
         {icon}
-
     </div>
 
     )
@@ -68,8 +71,14 @@ const Card=(props)=>{
 }
 
 const iconstyle={
-    width:'40px',
-    height: '40px'
+    icon:{
+        style:{
+            width:'100px',
+            height:'100px'
+
+        }
+    }
+    
 }
 
 export default Cards

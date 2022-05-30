@@ -1,84 +1,112 @@
 import React from 'react'
 import DataTable from 'react-data-table-component'
-import { FaUser } from 'react-icons/fa';
+import { FaFacebookMessenger, FaPhone, FaUser, FaUserShield } from 'react-icons/fa';
 
 
 const columns = [
     {
         name: 'Profile',
-        selector: row => row.profile,
+        selector: row => row.name,
+        
     },
     {
         name: 'Details',
-        selector: row => row.details,
+        selector: row => row.name,
     },
     {
         name: 'Status',
+        selector: row => row.icon
+        
+    },
+    {
         selector: row => row.status,
     },
+    {
+        selector: row => row.message,
+    }
 ];
 
 const data = [
     {
         id: 1,
-        details: 'UI/UX Design',
-        profile:'FaUser',
-        status: 'review'
+        name: 'Lewis Hamilton',
+        role: 'CEO Excerpt',
+        icon:<FaUser/>,
+        status: <FaPhone/>,
+        message:<FaFacebookMessenger/>
+        
     },
     {
         id: 2,
-        details: 'Web Development',
-        profile: 'Front End',
-        status: 'In Progress'
+        name: 'Paris Hammilton',
+        role: 'CEO Excerpt',
+        icon: <FaUser/>,
+       status:<FaPhone/>,
+       message:<FaFacebookMessenger/>
     },
     {
         id: 3,
-        details: 'Cash App',
-        profile: 'Mobile Team',
-        status: 'Pending'
+        name: 'Chicago West Hilton',
+        role: 'CEO Excerpt',
+        icon: <FaUser/>,
+        status:<FaPhone/>,
+        message:<FaFacebookMessenger/>
     },
     {
         id: 4,
-        details: 'Dextor Laboratory',
-        profile: 'UI Team',
-        status: 'review'
+        name: 'Dextor Kevin',
+        role: 'CEO Dextor Laboratory',
+        icon: <FaUser/>,
+        status:<FaPhone/>,
+        message:<FaFacebookMessenger/>
     },
     {
         id: 5,
-        details: 'Phinese and Ferb',
-        profile: 'Front End',
-        status: 'In Progress'
+        name: 'Wieruch Robert',
+        role: 'CTO Wieruch',
+        icon: <FaUser/>,
+       status:<FaPhone/>,
+       message:<FaFacebookMessenger/>
     },
     {
         id: 6,
-        details: 'Power Puff Girls',
-        profile: 'Mobile Team',
-        status: 'Pending'
+        name: 'Sung chi Lee',
+        role: 'CEO Sung Chi',
+        icon: <FaUser/>,
+        status:<FaPhone/>,
+        message:<FaFacebookMessenger/>
     },
     {
         id: 7,
-        details: 'Mojo jojo',
-        profile: 'UI Team',
-        status: 'review'
+        name: 'Mojo Mara Jojo',
+        role: 'CEO Excerpt',
+        icon: <FaUser/>,
+        status:<FaPhone/>,
+        message:<FaFacebookMessenger/>
     },
     
 ]
 
+
 const customStyles = {
-    title:{
+    
+    headCells: {
         style: {
-            width:'50%'
-        }
-
+            padding:'8px',
+            justifyContent: 'center'
+        },
     },
-
-    rows: {
+    cells: {
         style: {
-            width:'100%'
+            padding:'8px',
+            margin:'5px'
+
         },
     },
    
 };
+
+
 
 
 function Tables1() {
@@ -90,9 +118,14 @@ function Tables1() {
         columns={columns}
         data={data}
         customStyles={customStyles}
+
     />
+  
+  
  </div>
   )
 }
+
+
 
 export default Tables1

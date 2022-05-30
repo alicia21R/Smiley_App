@@ -10,7 +10,7 @@ h1{
 }
 
 h2,h3,h4,h5,h6{
-  margin: 10px;
+  margin: 0;
 }
 
 .main-container {
@@ -111,18 +111,67 @@ main {
   border-bottom: #fff 0.5px solid;
 }
 
+/* top nav bar */
+
 .top-nav-container{
-  background: black;
-  height:4rem;
+  background: whitesmoke;
+  /* height:5rem; */
+  display: flex;
+  justify-content: space-between;
+  padding:10px
+}
+.tittle{
+margin: 1px;
+padding: 5px;
+padding-left: 10px;
+}
+
+.nav-title {
+padding: 10px;
+}
+
+.search-input {
+  display: flex;
+  justify-content: center;
+  margin: 1px;
+padding: 5px;
+
+}
+
+input{
+  width:500px;
+  height:100%;
+  border-radius: 4px;
+  border:1px solid rgb(238, 205, 145)
+}
+
+.search-input{
+  text-align: center;
+}
+
+.user-profile{
+  min-width: 20%;
+justify-content: center;
+display: flex
+}
+.user-details{
+  display: flex;
+  justify-content: right;
+  margin:1px;
+  padding:3px
+}
+.user-dp{
+  margin: 10px;
+  padding: 2px;
 }
 
 
+.user-description{
+  padding: 10px;
+  margin-right: 2rem;
+}
 
 /* Dashboard */
-.dashboard-items{
-  margin: 10px;
-  padding: 5px;
-}
 
 
 /* Cards */
@@ -130,12 +179,18 @@ main {
   display: flex;
   width: 20vw;
   height: 15vh;
-  background-color: whitesmoke;
   margin: 15px;
   padding: 5px;
+  background-color: whitesmoke;
 }
 
+.background-yellow{
+  background-color: rgb(240, 219, 25)
+}
 
+.background-white{
+  background-color: whitesmoke;
+}
 
 .cards-container {
   margin:10px;
@@ -159,4 +214,21 @@ main {
 width:50%;
 padding: 5px;
 margin: 10px;
+}
+
+
+
+[data-column-id="3"].rdt_TableCell {
+  justify-content:right;
+  max-width:.5%;
+}
+
+[data-column-id="4"].rdt_TableCell {
+justify-content:center;
+ max-width:.5%;
+}
+
+[data-column-id="5"].rdt_TableCell {
+  justify-content:left;
+  max-width:.5%;
 }
