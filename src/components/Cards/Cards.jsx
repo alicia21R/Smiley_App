@@ -27,31 +27,34 @@ const cards=[
         total:"$54",
         name:"Income",
         icon:<FaMoneyBill/>,
-    },
     
-    
+    },    
 ]
 
-function Cards() {
 
-   
-   
+function Cards() {
+    const isBackgroundWhite =true;
+
     return (
     <section className="cards-container">   
          {cards.map((card,index)=>{
             const{name,total,icon}=card;
+
              return (
                <Card key={card.id} 
                  card={card}
                  iconstyle={iconstyle}
+                 style={{
+                   card:{backgroundColor:'orange'}
+                 }}
                >
 
                </Card>
              )
          })}
         
-        
     </section>
+
   )
 }
 
@@ -74,12 +77,15 @@ const iconstyle={
     icon:{
         style:{
             width:'100px',
-            height:'100px'
+            height:'100px',
+            backgroundColor:'yellow'
 
         }
     }
     
 }
+
+
 
 export default Cards
 

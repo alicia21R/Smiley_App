@@ -184,9 +184,11 @@ display: flex
   background-color: whitesmoke;
 }
 
-.background-yellow{
-  background-color: rgb(240, 219, 25)
+[id="4"].card{
+    background-color: rgb(240, 219, 25)
 }
+
+
 
 .background-white{
   background-color: whitesmoke;
