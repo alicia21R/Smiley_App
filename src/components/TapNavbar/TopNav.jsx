@@ -9,7 +9,7 @@ const data=[
   }
 ]
 
-const iconStyle = { width: '1.5rem',height: '1.5rem' }
+
 
 const TopNav = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import DataTable from 'react-data-table-component'
-import { FaFacebookMessenger, FaPhone, FaUser, FaUserShield } from 'react-icons/fa';
+import { FaFacebookMessenger, FaPhone, FaUser} from 'react-icons/fa';
 
 
 const columns = [
