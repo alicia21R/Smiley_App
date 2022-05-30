@@ -1,4 +1,4 @@
-import React,{ useState, useEffect} from 'react';
+import React from 'react';
 import {FaFile, FaFileArchive, FaMoneyBill, FaUsers} from 'react-icons/fa'
 
 const cards=[
@@ -33,12 +33,13 @@ const cards=[
 
 
 function Cards() {
-    const isBackgroundWhite =true;
+  
 
     return (
     <section className="cards-container">   
          {cards.map((card,index)=>{
-            const{name,total,icon}=card;
+             
+            // const{name,total,icon}=card;
 
              return (
                <Card key={card.id} 
